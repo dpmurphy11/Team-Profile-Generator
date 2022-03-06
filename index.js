@@ -14,25 +14,25 @@ let askMgrQuestions = () => {
             {
                 type: 'input',
                 name: 'mgrName',
-                message: 'What is your manager\'s name?',
+                message: 'What is the manager\'s name?',
                 default: 'Don Murphy',
 
             },
             {
                 type: 'input',
                 name: 'mgrEmail',
-                message: 'What is your manager\'s email?',
-                default: 'dpmurphy_onsite@hotmail.com',
+                message: 'What is the manager\'s email?',
+                default: 'litewit@gmail.com',
             },
             {
                 type: 'input',
                 name: 'mgrOfficeNo',
-                message: 'What is your manager\'s office number?',
+                message: 'What is the manager\'s office number?',
             },
             {
                 type: 'input',
                 name: 'mgrId',
-                message: 'What is your manager\'s id?',
+                message: 'What is the manager\'s id?',
             },
         ])
         .then((answers) => {
@@ -51,11 +51,13 @@ let askInternQuestions = () => {
             type: 'input',
             name: 'intName',
             message: 'What is your intern\'s name?',
+            default: 'Bob Jones',
         },
         {
             inte: 'input',
             name: 'intEmail',
             message: 'What is your intern\'s email?',
+            default: 'bob@jones.com',
         },
         {
             type: 'input',
@@ -66,6 +68,7 @@ let askInternQuestions = () => {
             type: 'input',
             name: 'intSchool',
             message: 'What is your intern\'s school?',
+            default: 'UMASS-Boston',
         },
     ])
         .then((answers) => {
@@ -76,7 +79,6 @@ let askInternQuestions = () => {
             // start at the top
             askEmployeeQuestions();
         })
-
 }
 
 let askEngineerQuestions = () => {
@@ -86,11 +88,13 @@ let askEngineerQuestions = () => {
             type: 'input',
             name: 'engName',
             message: 'What is your engineer\'s name?',
+            default: 'Jim Brown',
         },
         {
             type: 'input',
             name: 'engEmail',
             message: 'What is your engineer\'s email?',
+            default: 'jim@brown.com',
         },
         {
             type: 'input',
@@ -139,7 +143,6 @@ let writeToFile = (fileName, data) => {
         err ? console.log(`Unable to save file. ${err}`) : console.log('The file has been saved!');
     })
 };
-
 
 // generate HTML and write file
 let generateOutput = () => {
