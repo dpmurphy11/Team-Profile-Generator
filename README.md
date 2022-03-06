@@ -11,6 +11,7 @@ A Node.js command-line application that takes in information about employees on 
 * [Screenshot](#screenshot)
 * [Repository](#repository-httpsgithubcomdpmurphy11team-profile-generator)
 * [Demo Video](#demo-video-httpsdrivegooglecomfiled1cvmcwl5c4dqgcivigjksoblkbvjkgxavviewuspsharing)
+* [Generated HTML File](#generated-htmldistindexhtml)
 * [Questions](#questions)
 ## Installation
   To install the project dependencies, run the following command:
@@ -37,8 +38,9 @@ When a user enters the team manager’s name, employee ID, email address, and of
 When a user select the engineer option, they are prompted to enter the engineer’s name, ID, email, and GitHub username, and taken back to the menu
 When a user selects the intern option, they are prompted to enter the intern’s name, ID, email, and school, and taken back to the menu
 When a user decide to finish building their team, they exit the application, and the HTML is generated
+Four test suites were written using Jest i order to run test on Employee, Manager, Intern, and Engineer classes.
 ```
-## Technologies
+## Technology
 ```md
 * VSCode terminal
 * Node.js
@@ -58,10 +60,10 @@ When a user decide to finish building their team, they exit the application, and
 ### License
 [![GitHub license](https://img.shields.io/github/license/dpmurphy11/Team-Profile-Generator?style=plastic)](https://github.com/dpmurphy11/Team-Profile-Generator/blob/main/LICENSE)
 ### Screenshot
-![Application screenshot](./dist/)
+![Application screenshot](./dist/team-profile-gen.png)
 ### Repository: <https://github.com/dpmurphy11/Team-Profile-Generator>
-### Demo Video: <https://drive.google.com/file/d/1Cvmcwl5C4DQGcIvigJKSobLKbvJkGxAV/view?usp=sharing>
-##[Generated HTML](./dist/index.html)
+### Demo Video: <https://drive.google.com/file/d/1vDXTt3QlWAuHV6dMUbYj1Rm5q6TKl8en/view>
+### [Generated HTML](https://github.com/dpmurphy11/Team-Profile-Generator/tree/main/dist/index.html)
 ### Questions
   If you have any questions about the repo, open an issue or contact me at dpmurphy_onsite@hotmail.com
   Visit my GitHub profile at [dpmurphy11](https://github.com/dpmurphy11/).

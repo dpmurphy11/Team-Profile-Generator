@@ -44,7 +44,7 @@ let renderCards = (arrEmployees) => {
         <ul class="list-group">
             <li class="list-group-item text-black lh-lg fw-light">ID: ${employee.id}</li>
             <li class="list-group-item text-black lh-lgg fw-light">Email: <a class="text-decoration-none" href="mailto:${employee.email}">${employee.email}</a></li>
-            <li class="list-group-item text-black lh-lgg fw-light">GitHub: <a class="text-decoration-none" href="https://github.com/${employee.github}">${employee.github}</a></li>
+            <li class="list-group-item text-black lh-lgg fw-light">GitHub: <a class="text-decoration-none" href="https://github.com/${employee.github}" target="_new">${employee.github}</a></li>
         </ul>
     </div>
 </div>`
