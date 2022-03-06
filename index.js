@@ -6,9 +6,7 @@ const Manager = require('./lib/Manager');
 
 let arrTeam = [];
 
-let renderHTML = (arrTeam) => {
 
-}
 // ask manager questions and add to team
 let askMgrQuestions = () => {
     inquirer
@@ -38,14 +36,12 @@ let askMgrQuestions = () => {
         ])
         .then((answers) => {
             // create manager object and add properties to it
-            let manager = new Manager;
-            manager.name = answers.mgrName;
-            manager.email = answers.mgrEmail;
-            manager.officeNumber = answers.mgrOfficeNo;
-            manager.id = answers.mgrId
+            const manager = new Manager(answers.mgrName, parseInt(answers.mgrId), answers.mgrEmail, parseInt(answers.mgrOfficeNo));
             // add manager to team array
             arrTeam.push(manager);
-        });
+            console.log(arrTeam);
+            askEmployeeQuestions();
+        })
 }
 
 // get type of employee and add each to team
@@ -58,8 +54,9 @@ let askEmployeeQuestions = () => {
             choices: ['Engineer', 'Intern', 'I\'m done',],
         }
     ])
-        .then((answer) => {
-            if (answer.empType == 'Intern') () => {
+        .then((answers) => {
+            console.log(answers)
+            if (answers.empType == 'Intern') () => {
                 // ask intern questions and add to team
                 inquirer.prompt([
                     {
@@ -85,18 +82,15 @@ let askEmployeeQuestions = () => {
                 ])
                     .then((answers) => {
                         // create intern object and add properties to it
-                        let intern = new Intern;
-                        intern.name = answers.intName;
-                        intern.email = answers.intEmail;
-                        intern.id = answers.intId
-                        intern.school = answers.intschool;
+                        let intern = new Intern(answers.intName, parseInt(answers.intId), answers.intEmail, answers.intschool);
                         // add intern to team array
                         arrTeam.push(intern);
+                        console.log(arrTeam);
                         // start at the top
                         askEmployeeQuestions();
                     })
             }
-            else if (answer.empType == 'Engineer') () => {
+            else if (answers.empType == 'Engineer') () => {
                 // ask engineer questions and add to team
                 inquirer.prompt([
                     {
@@ -116,19 +110,15 @@ let askEmployeeQuestions = () => {
                     },
                     {
                         type: 'input',
-                        name: 'engGitHub',
-                        message: 'What is your engineer\'s username?',
+                        name: 'engOfficeNo',
+                        message: 'What is your engineer\'s office number?',
                     },
                 ])
                     .then((answers) => {
                         // create engineer object and add properties to it
-                        let engineer = new Engineer;
-                        engineer.name = answers.engName;
-                        engineer.email = answers.engEmail;
-                        engineer.id = answers.engId
-                        engineer.github = answers.engGitHub;
-                        // add engineer to team array
+                        let engineer = new Engineer(answers.engName, parseInt(answers.engId), answers.engEmail, answers.engGitHub);
                         arrTeam.push(engineer);
+                        console.log(arrTeam);
                         // start at the top
                         askEmployeeQuestions();
                     })
@@ -143,3 +133,4 @@ let askEmployeeQuestions = () => {
 }
 
 askMgrQuestions();
+
