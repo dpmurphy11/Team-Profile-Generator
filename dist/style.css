@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Blinker', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.employees {
+    max-width: 1000px;
+}
+
+.card-title {
+    font-size: 1.5em;
+}
