@@ -11,7 +11,7 @@ A Node.js command-line application that takes in information about employees on 
 * [Screenshot](#screenshot)
 * [Repository](#repository-httpsgithubcomdpmurphy11team-profile-generator)
 * [Demo Video](#demo-video-httpsdrivegooglecomfiled1vdxtt3qlwauhv6dmubyj1rm5q6tkl8enview)
-* [Generated HTML File](#generated-htmlhttpsgithubcomdpmurphy11team-profile-generatortreemaindistindexhtml)
+* [Generated HTML File](#generated-htmlhttpsdpmurphy11githubioteam-profile-generatordistindexhtml)
 * [Questions](#questions)
 ## Installation
   To install the project dependencies, run the following command:
