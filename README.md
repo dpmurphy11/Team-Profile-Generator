@@ -10,8 +10,8 @@ A Node.js command-line application that takes in information about employees on 
 * [License](#license)
 * [Screenshot](#screenshot)
 * [Repository](#repository-httpsgithubcomdpmurphy11team-profile-generator)
-* [Demo Video](#demo-video-httpsdrivegooglecomfiled1cvmcwl5c4dqgcivigjksoblkbvjkgxavviewuspsharing)
-* [Generated HTML File](#generated-htmldistindexhtml)
+* [Demo Video](#demo-video-httpsdrivegooglecomfiled1vdxtt3qlwauhv6dmubyj1rm5q6tkl8enview)
+* [Generated HTML File](#generated-htmlhttpsgithubcomdpmurphy11team-profile-generatortreemaindistindexhtml)
 * [Questions](#questions)
 ## Installation
   To install the project dependencies, run the following command:
@@ -63,7 +63,7 @@ Four test suites were written using Jest i order to run test on Employee, Manage
 ![Application screenshot](./dist/team-profile-gen.png)
 ### Repository: <https://github.com/dpmurphy11/Team-Profile-Generator>
 ### Demo Video: <https://drive.google.com/file/d/1vDXTt3QlWAuHV6dMUbYj1Rm5q6TKl8en/view>
-### [Generated HTML](https://github.com/dpmurphy11/Team-Profile-Generator/tree/main/dist/index.html)
+### [Generated HTML](https://dpmurphy11.github.io/Team-Profile-Generator/dist/index.html)
 ### Questions
   If you have any questions about the repo, open an issue or contact me at dpmurphy_onsite@hotmail.com
   Visit my GitHub profile at [dpmurphy11](https://github.com/dpmurphy11/).
