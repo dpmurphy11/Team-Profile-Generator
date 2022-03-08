@@ -28,11 +28,25 @@ let askMgrQuestions = () => {
                 type: 'input',
                 name: 'mgrOfficeNo',
                 message: 'What is the manager\'s office number?',
+                validate: (input) => {
+                    if (!input || isNaN(input)) {
+                        console.log('Answer must be a number.');
+                        return false;
+                    }
+                    return true;
+                }
             },
             {
                 type: 'input',
                 name: 'mgrId',
                 message: 'What is the manager\'s id?',
+                validate: (input) => {
+                    if (!input || isNaN(input)) {
+                        console.log('Answer must be a number.');
+                        return false;
+                    }
+                    return true;
+                }
             },
         ])
         .then((answers) => {
@@ -63,6 +77,13 @@ let askInternQuestions = () => {
             type: 'input',
             name: 'intId',
             message: 'What is your intern\'s id?',
+            validate: (input) => {
+                if (!input || isNaN(input)) {
+                    console.log('Answer must be a number.');
+                    return false;
+                }
+                return true;
+            }
         },
         {
             type: 'input',
@@ -100,6 +121,13 @@ let askEngineerQuestions = () => {
             type: 'input',
             name: 'engId',
             message: 'What is your engineer\'s id?',
+            validate: (input) => {
+                if (!input || isNaN(input)) {
+                    console.log('Answer must be a number.');
+                    return false;
+                }
+                return true;
+            }
         },
         {
             type: 'input',
